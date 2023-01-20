@@ -46,10 +46,16 @@ Plug 'voldikss/vim-floaterm' " :FloatermNew
 
 call plug#end()
 
-let g:onedark_config = {
-	\ 'style': 'darker',
-\}
-colorscheme onedark
+lua << EOF
+require('onedark').setup {
+	colors = {
+		black = '#000000',
+		bg0 = '#000000',
+	},
+	style = 'darker',
+}
+require('onedark').load()
+EOF
 
 " Start NERDTree. If a file is specified, move the cursor to its window.
 autocmd StdinReadPre * let s:std_in=1
