@@ -1,5 +1,24 @@
 # nvim Config
 
+## LazyVim nvim config
+
+Using *lua*
+
+1. Run `install.sh`
+
+On windows, install nvim, copy `nvim` to `C:/Users/<user>/AppData/Local/nvim`
+
+Overview
+
+* Uses LazyVim and lazy.nvim package
+* onedark theme
+* mason + treesitter
+* rust.lua plugins for rust
+
+## nvim + coc config
+
+In `nvim-old` folder
+
 1. Move `init.vim` and `coc-settings.json` into the nvim config folder
    * `C:/Users/<user>/AppData/Local/nvim`
    * `/home/<user>/.config/nvim`
